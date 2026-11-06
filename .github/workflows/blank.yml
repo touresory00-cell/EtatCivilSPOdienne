@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Recuperer le projet
+      - name: Recover the project
         uses: actions/checkout@v4
 
       - name: Installer Java
@@ -28,7 +28,7 @@ jobs:
           chmod +x gradlew
           ./gradlew assembleDebug
 
-      - name: Recuperer APK
+      - name: Recoverer APK
         uses: actions/upload-artifact@v4
         with:
           name: EtatCivilSPOdienne
